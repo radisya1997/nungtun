@@ -6,121 +6,205 @@
   <title>Nungtun | Pendampingan Anak Berkebutuhan Khusus</title>
   <meta name="description" content="Nungtun membantu orang tua memahami perkembangan anak lewat asesmen, program terapi, dan pendidikan di rumah dengan pendampingan ahli.">
   
-  <!-- Open Graph / Social Preview -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Nungtun | Pendampingan Anak Berkebutuhan Khusus">
   <meta property="og:description" content="Solusi asesmen, program di rumah, dan pendampingan ahli untuk anak berkebutuhan khusus.">
   <meta property="og:type" content="website">
 
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Custom Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+            },
+            accent: {
+              500: '#f59e0b', // Amber
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-white text-slate-800 antialiased selection:bg-teal-100 selection:text-teal-900">
+<body class="font-sans bg-slate-50 text-slate-700 antialiased selection:bg-brand-100 selection:text-brand-900">
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
-    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-      <a href="#" class="text-2xl font-extrabold tracking-tight text-teal-700">Nungtun</a>
-      <nav class="hidden gap-6 text-sm font-medium sm:flex">
-        <a href="#layanan" class="transition-colors hover:text-teal-700">Layanan</a>
-        <a href="#cara-mulai" class="transition-colors hover:text-teal-700">Cara Mulai</a>
-        <a href="#kontak" class="transition-colors hover:text-teal-700">Kontak</a>
+  <header class="sticky top-0 z-50 border-b border-slate-200/50 bg-white/80 backdrop-blur-lg">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
+      <a href="#" class="font-display text-2xl font-bold tracking-tight text-brand-700 flex items-center gap-2">
+        <!-- Ikon Logo Sederhana -->
+        <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+        </div>
+        Nungtun
+      </a>
+      <nav class="hidden gap-8 text-sm font-medium sm:flex">
+        <a href="#layanan" class="transition-colors text-slate-500 hover:text-brand-600">Layanan</a>
+        <a href="#cara-mulai" class="transition-colors text-slate-500 hover:text-brand-600">Cara Mulai</a>
+        <a href="#kontak" class="transition-colors text-slate-500 hover:text-brand-600">Kontak</a>
       </nav>
-      <a href="#" class="wa-link rounded-full bg-teal-700 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-800 hover:shadow">Chat WhatsApp</a>
+      <a href="#" class="wa-link rounded-full bg-brand-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-brand-800 hover:shadow hover:-translate-y-0.5">Konsultasi</a>
     </div>
   </header>
 
   <main>
     <!-- HERO SECTION -->
-    <section class="bg-teal-50/50 relative overflow-hidden">
-      <div class="mx-auto max-w-5xl px-4 py-16 text-center sm:py-24">
-        <span class="inline-block rounded-full bg-teal-100/80 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-teal-800 mb-4">Layanan Pendampingan Profesional</span>
-        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">Menuntun langkah anak, bersama orang tua</h1>
-        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">Anak Anda terlihat berbeda dari anak seusianya? Nungtun membantu Anda memahami kebutuhan anak melalui asesmen, lalu mendampingi program terapi dan pendidikan yang dapat dijalankan di rumah.</p>
-        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="#" class="wa-link w-full sm:w-auto rounded-full bg-teal-700 px-8 py-3.5 font-semibold text-white shadow-md transition-all hover:bg-teal-800 hover:shadow-lg">Konsultasi via WhatsApp</a>
-          <a href="#layanan" class="w-full sm:w-auto rounded-full border border-slate-300 bg-white px-8 py-3.5 font-semibold text-slate-700 shadow-sm transition-all hover:border-teal-700 hover:text-teal-700">Lihat Layanan</a>
+    <section class="relative overflow-hidden bg-white">
+      <!-- Ornamen Latar Belakang Geometris Lembut -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-50 via-white to-white opacity-70"></div>
+      
+      <div class="relative mx-auto max-w-5xl px-4 py-20 text-center sm:px-6 sm:py-32">
+        <span class="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-700 mb-6 shadow-sm">
+          <span class="h-2 w-2 rounded-full bg-accent-500"></span>
+          Mitra Tumbuh Kembang Anak
+        </span>
+        <h1 class="font-display text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl leading-[1.1]">
+          Menuntun langkah anak,<br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-400">bersama orang tua.</span>
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
+          Setiap anak memiliki ritme berkembangnya sendiri. Nungtun membantu Anda memahami kebutuhan unik anak melalui asesmen profesional, serta mendampingi program terapi dan pendidikan di rumah.
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="#" class="wa-link flex w-full items-center justify-center gap-2 sm:w-auto rounded-full bg-brand-700 px-8 py-4 font-semibold text-white shadow-lg shadow-brand-200 transition-all hover:bg-brand-800 hover:shadow-xl hover:-translate-y-1">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Konsultasi Sekarang
+          </a>
+          <a href="#layanan" class="w-full sm:w-auto rounded-full bg-white px-8 py-4 font-semibold text-slate-700 border border-slate-200 shadow-sm transition-all hover:border-brand-300 hover:text-brand-700 hover:bg-brand-50">Pelajari Layanan</a>
         </div>
       </div>
     </section>
 
     <!-- LAYANAN -->
-    <section id="layanan" class="mx-auto max-w-5xl px-4 py-20">
-      <div class="text-center">
-        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl text-slate-900">Layanan Nungtun</h2>
-        <p class="mt-2 text-slate-600">Pendekatan terstruktur untuk mengoptimalkan tumbuh kembang anak.</p>
+    <section id="layanan" class="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Pendekatan Terstruktur Nungtun</h2>
+        <p class="mt-4 text-lg text-slate-600">Metodologi yang dirancang khusus untuk mengoptimalkan potensi dan tumbuh kembang anak dalam lingkungan yang suportif.</p>
       </div>
-      <div class="mt-12 grid gap-6 sm:grid-cols-3">
-        <div class="rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:border-teal-600 hover:shadow-md">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-teal-700 font-bold mb-4">01</div>
-          <h3 class="text-xl font-bold text-slate-900">Asesmen</h3>
-          <p class="mt-3 text-slate-600 leading-relaxed">Penilaian perkembangan anak untuk mengenali kekuatan dan kebutuhannya, sebagai dasar menentukan langkah berikutnya.</p>
+      
+      <div class="mt-16 grid gap-8 sm:grid-cols-3">
+        <!-- Kartu 1 -->
+        <div class="group relative rounded-3xl bg-white p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-brand-100/50 hover:-translate-y-2">
+          <div class="absolute inset-0 rounded-3xl ring-2 ring-transparent transition-all group-hover:ring-brand-500/20"></div>
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-50 text-brand-600 mb-6 transition-transform group-hover:scale-110 group-hover:bg-brand-100">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-slate-900">Asesmen Komprehensif</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed text-sm">Penilaian mendalam tentang perkembangan anak untuk memetakan kekuatan, hambatan, dan kebutuhan spesifiknya sebagai pijakan awal.</p>
         </div>
-        <div class="rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:border-teal-600 hover:shadow-md">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-teal-700 font-bold mb-4">02</div>
-          <h3 class="text-xl font-bold text-slate-900">Program di Rumah</h3>
-          <p class="mt-3 text-slate-600 leading-relaxed">Program terapi dan pendidikan yang disusun sesuai kebutuhan anak, dan bisa dijalankan orang tua secara mandiri di rumah.</p>
+        
+        <!-- Kartu 2 -->
+        <div class="group relative rounded-3xl bg-white p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-brand-100/50 hover:-translate-y-2">
+          <div class="absolute inset-0 rounded-3xl ring-2 ring-transparent transition-all group-hover:ring-brand-500/20"></div>
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent-50 text-accent-600 mb-6 transition-transform group-hover:scale-110 group-hover:bg-accent-100">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-slate-900">Program di Rumah</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed text-sm">Rancangan terapi dan edukasi terstruktur (berbasis observasi) yang didesain agar mudah dan praktis dijalankan oleh orang tua di rumah.</p>
         </div>
-        <div class="rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:border-teal-600 hover:shadow-md">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-teal-700 font-bold mb-4">03</div>
-          <h3 class="text-xl font-bold text-slate-900">Pendampingan Ahli</h3>
-          <p class="mt-3 text-slate-600 leading-relaxed">Orang tua tidak berjalan sendiri. Ahli mendampingi, memantau perkembangan, dan menyesuaikan program bila diperlukan.</p>
+        
+        <!-- Kartu 3 -->
+        <div class="group relative rounded-3xl bg-white p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-brand-100/50 hover:-translate-y-2">
+          <div class="absolute inset-0 rounded-3xl ring-2 ring-transparent transition-all group-hover:ring-brand-500/20"></div>
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-50 text-brand-600 mb-6 transition-transform group-hover:scale-110 group-hover:bg-brand-100">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-slate-900">Pendampingan Ahli</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed text-sm">Konsultasi rutin dan evaluasi berkala bersama praktisi ahli untuk memantau efektivitas program dan mengkalibrasi strategi intervensi.</p>
         </div>
       </div>
     </section>
 
     <!-- CARA MULAI -->
-    <section id="cara-mulai" class="bg-slate-50 border-y border-slate-200/80">
-      <div class="mx-auto max-w-5xl px-4 py-20">
-        <div class="text-center">
-          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl text-slate-900">Cara Memulai</h2>
-          <p class="mt-2 text-slate-600">Langkah mudah untuk mulai mendapatkan arah penanganan yang tepat.</p>
-        </div>
-        <div class="mt-12 grid gap-8 sm:grid-cols-3">
-          <div class="text-center p-4">
-            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-700 text-xl font-bold text-white shadow-md">1</div>
-            <h3 class="mt-6 text-lg font-bold text-slate-900">Hubungi kami</h3>
-            <p class="mt-2 text-slate-600">Ceritakan kekhawatiran Anda lewat WhatsApp.</p>
+    <section id="cara-mulai" class="bg-white py-24 sm:px-6">
+      <div class="mx-auto max-w-5xl rounded-3xl bg-slate-900 px-6 py-16 sm:p-20 shadow-2xl relative overflow-hidden">
+        <!-- Dekorasi Abstrak Gelap -->
+        <div class="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand-800/30 blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-accent-900/20 blur-3xl"></div>
+        
+        <div class="relative z-10">
+          <div class="text-center mb-16">
+            <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Langkah Memulai Perjalanan</h2>
+            <p class="mt-4 text-slate-400">Tiga langkah sederhana untuk mendapatkan arah penanganan yang tepat.</p>
           </div>
-          <div class="text-center p-4">
-            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-700 text-xl font-bold text-white shadow-md">2</div>
-            <h3 class="mt-6 text-lg font-bold text-slate-900">Asesmen dan konsultasi</h3>
-            <p class="mt-2 text-slate-600">Kami menilai kebutuhan anak dan menjelaskan hasilnya.</p>
+          
+          <div class="grid gap-10 sm:grid-cols-3 relative">
+            <!-- Garis Penghubung (Hanya Desktop) -->
+            <div class="hidden sm:block absolute top-8 left-[16%] right-[16%] h-[2px] bg-slate-700/50"></div>
+            
+            <div class="relative text-center">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-600 text-2xl font-bold text-white shadow-lg shadow-brand-900/50 border-4 border-slate-900 relative z-10">1</div>
+              <h3 class="mt-6 font-display text-lg font-bold text-white">Sapa Kami</h3>
+              <p class="mt-2 text-sm text-slate-400">Hubungi via WhatsApp dan ceritakan kekhawatiran Anda tanpa ragu.</p>
+            </div>
+            
+            <div class="relative text-center">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-600 text-2xl font-bold text-white shadow-lg shadow-brand-900/50 border-4 border-slate-900 relative z-10">2</div>
+              <h3 class="mt-6 font-display text-lg font-bold text-white">Sesi Asesmen</h3>
+              <p class="mt-2 text-sm text-slate-400">Ahli kami akan memetakan kondisi anak dan merumuskan analisisnya.</p>
+            </div>
+            
+            <div class="relative text-center">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-600 text-2xl font-bold text-white shadow-lg shadow-brand-900/50 border-4 border-slate-900 relative z-10">3</div>
+              <h3 class="mt-6 font-display text-lg font-bold text-white">Eksekusi Program</h3>
+              <p class="mt-2 text-sm text-slate-400">Terapkan program di rumah dengan pengawasan ahli secara intensif.</p>
+            </div>
           </div>
-          <div class="text-center p-4">
-            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-700 text-xl font-bold text-white shadow-md">3</div>
-            <h3 class="mt-6 text-lg font-bold text-slate-900">Mulai program</h3>
-            <p class="mt-2 text-slate-600">Jalankan program di rumah dengan pendampingan ahli.</p>
-          </div>
-        </div>
-        <div class="mt-12 text-center">
-          <span class="inline-block rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-medium text-slate-600 shadow-sm">
-            Informasi biaya disampaikan melalui WhatsApp.
-          </span>
         </div>
       </div>
     </section>
 
     <!-- AJAKAN BERTINDAK -->
-    <section id="kontak" class="mx-auto max-w-5xl px-4 py-20 text-center">
-      <h2 class="text-2xl font-bold tracking-tight sm:text-4xl text-slate-900">Siap berbicara dengan kami?</h2>
-      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-600 leading-relaxed">Tidak perlu menunggu sampai yakin. Ceritakan saja apa yang Anda lihat pada anak, kami bantu memahaminya.</p>
-      <div class="mt-8">
-        <a href="#" class="wa-link inline-block rounded-full bg-teal-700 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-teal-800 hover:shadow-xl">Chat WhatsApp Sekarang</a>
+    <section id="kontak" class="mx-auto max-w-4xl px-4 py-24 text-center">
+      <h2 class="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Jangan menunda langkah pertama.</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-600 leading-relaxed">Mengetahui lebih awal berarti menangani lebih dini. Mari bicarakan apa yang Anda amati pada anak, kami siap mendengarkan.</p>
+      <div class="mt-10">
+        <a href="#" class="wa-link inline-flex items-center gap-2 rounded-full bg-brand-700 px-10 py-5 text-lg font-semibold text-white shadow-xl shadow-brand-200 transition-all hover:bg-brand-800 hover:shadow-2xl hover:-translate-y-1">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Mulai Chat WhatsApp
+        </a>
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t border-slate-200 bg-slate-50">
-    <div class="mx-auto max-w-5xl px-4 py-8 text-center text-sm text-slate-500 space-y-2">
-      <p>Asesmen Nungtun bersifat asesmen perkembangan dan pendidikan, dan tidak menggantikan diagnosis medis oleh dokter atau psikolog.</p>
-      <p class="font-medium text-slate-600">&copy; 2026 Nungtun. All rights reserved.</p>
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-5xl px-4 py-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-500">
+      <div class="flex items-center gap-2 font-display font-bold text-slate-900 text-lg">
+        Nungtun
+      </div>
+      <p class="text-center md:text-left max-w-md">
+        Asesmen Nungtun berfokus pada ranah pendidikan dan perkembangan perilaku, tidak menggantikan diagnosis medis klinis oleh psikolog atau dokter spesialis anak.
+      </p>
+      <p class="font-medium text-slate-900">&copy; 2026 Nungtun.</p>
     </div>
   </footer>
 
-  <!-- CENTRALIZED WHATSAPP CONFIG SCRIPT (Mencegah DRY / Duplikasi Kode) -->
+  <!-- SCRIPT WA DRY -->
   <script>
-    const WHATSAPP_NUMBER = "6289631019945"; // <-- Ganti nomor ini sekali saja dengan nomor WhatsApp Anda (format 62)
+    // GANTI NOMOR DI BAWAH INI DENGAN NOMOR WA YANG AKTIF (Format 62)
+    const WHATSAPP_NUMBER = "6289631019945"; 
     const DEFAULT_MESSAGE = "Halo Nungtun, saya ingin berkonsultasi mengenai program pendampingan anak.";
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -132,6 +216,5 @@
       });
     });
   </script>
-
 </body>
 </html>
