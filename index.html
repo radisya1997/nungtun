@@ -1,97 +1,137 @@
 <!DOCTYPE html>
-<html lang='id'>
+<html lang="id" class="scroll-smooth">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nungtun | Pendampingan Anak Berkebutuhan Khusus</title>
-  <meta name='description' content='Nungtun membantu orang tua memahami perkembangan anak lewat asesmen dan program terapi serta pendidikan di rumah dengan pendampingan ahli.'>
-  <script src='https://cdn.tailwindcss.com'></script>
+  <meta name="description" content="Nungtun membantu orang tua memahami perkembangan anak lewat asesmen, program terapi, dan pendidikan di rumah dengan pendampingan ahli.">
+  
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Nungtun | Pendampingan Anak Berkebutuhan Khusus">
+  <meta property="og:description" content="Solusi asesmen, program di rumah, dan pendampingan ahli untuk anak berkebutuhan khusus.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class='bg-white text-slate-800 antialiased'>
+<body class="bg-white text-slate-800 antialiased selection:bg-teal-100 selection:text-teal-900">
 
   <!-- HEADER -->
-  <header class='border-b border-slate-200'>
-    <div class='mx-auto flex max-w-5xl items-center justify-between px-4 py-4'>
-      <a href='#' class='text-2xl font-bold text-teal-700'>Nungtun</a>
-      <nav class='hidden gap-6 text-sm font-medium sm:flex'>
-        <a href='#layanan' class='hover:text-teal-700'>Layanan</a>
-        <a href='#cara-mulai' class='hover:text-teal-700'>Cara Mulai</a>
-        <a href='#kontak' class='hover:text-teal-700'>Kontak</a>
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
+      <a href="#" class="text-2xl font-extrabold tracking-tight text-teal-700">Nungtun</a>
+      <nav class="hidden gap-6 text-sm font-medium sm:flex">
+        <a href="#layanan" class="transition-colors hover:text-teal-700">Layanan</a>
+        <a href="#cara-mulai" class="transition-colors hover:text-teal-700">Cara Mulai</a>
+        <a href="#kontak" class="transition-colors hover:text-teal-700">Kontak</a>
       </nav>
-      <a href='https://wa.me/6289631019945?text=Halo%20Nungtun%2C%20saya%20ingin%20berkonsultasi.' class='rounded-full bg-teal-700 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-800'>Chat WhatsApp</a>
+      <a href="#" class="wa-link rounded-full bg-teal-700 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-teal-800 hover:shadow">Chat WhatsApp</a>
     </div>
   </header>
 
-  <!-- BAGIAN UTAMA (HERO) -->
-  <section class='bg-teal-50'>
-    <div class='mx-auto max-w-5xl px-4 py-16 text-center sm:py-24'>
-      <h1 class='text-3xl font-bold leading-tight text-slate-900 sm:text-5xl'>Menuntun langkah anak, bersama orang tua</h1>
-      <p class='mx-auto mt-4 max-w-2xl text-lg text-slate-600'>Anak Anda terlihat berbeda dari anak seusianya? Nungtun membantu Anda memahami kebutuhan anak melalui asesmen, lalu mendampingi program terapi dan pendidikan yang dapat dijalankan di rumah.</p>
-      <div class='mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row'>
-        <a href='https://wa.me/6289631019945?text=Halo%20Nungtun%2C%20saya%20ingin%20berkonsultasi.' class='rounded-full bg-teal-700 px-6 py-3 font-semibold text-white hover:bg-teal-800'>Konsultasi via WhatsApp</a>
-        <a href='#layanan' class='rounded-full border border-teal-700 px-6 py-3 font-semibold text-teal-700 hover:bg-teal-100'>Lihat layanan</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- LAYANAN -->
-  <section id='layanan' class='mx-auto max-w-5xl px-4 py-16'>
-    <h2 class='text-center text-2xl font-bold sm:text-3xl'>Layanan Nungtun</h2>
-    <div class='mt-10 grid gap-6 sm:grid-cols-3'>
-      <div class='rounded-2xl border border-slate-200 p-6'>
-        <h3 class='text-lg font-semibold text-teal-700'>Asesmen</h3>
-        <p class='mt-2 text-slate-600'>Penilaian perkembangan anak untuk mengenali kekuatan dan kebutuhannya, sebagai dasar menentukan langkah berikutnya.</p>
-      </div>
-      <div class='rounded-2xl border border-slate-200 p-6'>
-        <h3 class='text-lg font-semibold text-teal-700'>Program di Rumah</h3>
-        <p class='mt-2 text-slate-600'>Program terapi dan pendidikan yang disusun sesuai kebutuhan anak, dan bisa dijalankan orang tua secara mandiri di rumah.</p>
-      </div>
-      <div class='rounded-2xl border border-slate-200 p-6'>
-        <h3 class='text-lg font-semibold text-teal-700'>Pendampingan Ahli</h3>
-        <p class='mt-2 text-slate-600'>Orang tua tidak berjalan sendiri. Ahli mendampingi, memantau perkembangan, dan menyesuaikan program bila diperlukan.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CARA MULAI -->
-  <section id='cara-mulai' class='bg-slate-50'>
-    <div class='mx-auto max-w-5xl px-4 py-16'>
-      <h2 class='text-center text-2xl font-bold sm:text-3xl'>Cara Memulai</h2>
-      <div class='mt-10 grid gap-6 sm:grid-cols-3'>
-        <div class='text-center'>
-          <div class='mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-teal-700 text-xl font-bold text-white'>1</div>
-          <h3 class='mt-4 font-semibold'>Hubungi kami</h3>
-          <p class='mt-2 text-slate-600'>Ceritakan kekhawatiran Anda lewat WhatsApp.</p>
-        </div>
-        <div class='text-center'>
-          <div class='mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-teal-700 text-xl font-bold text-white'>2</div>
-          <h3 class='mt-4 font-semibold'>Asesmen dan konsultasi</h3>
-          <p class='mt-2 text-slate-600'>Kami menilai kebutuhan anak dan menjelaskan hasilnya.</p>
-        </div>
-        <div class='text-center'>
-          <div class='mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-teal-700 text-xl font-bold text-white'>3</div>
-          <h3 class='mt-4 font-semibold'>Mulai program</h3>
-          <p class='mt-2 text-slate-600'>Jalankan program di rumah dengan pendampingan ahli.</p>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="bg-teal-50/50 relative overflow-hidden">
+      <div class="mx-auto max-w-5xl px-4 py-16 text-center sm:py-24">
+        <span class="inline-block rounded-full bg-teal-100/80 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-teal-800 mb-4">Layanan Pendampingan Profesional</span>
+        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">Menuntun langkah anak, bersama orang tua</h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">Anak Anda terlihat berbeda dari anak seusianya? Nungtun membantu Anda memahami kebutuhan anak melalui asesmen, lalu mendampingi program terapi dan pendidikan yang dapat dijalankan di rumah.</p>
+        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="#" class="wa-link w-full sm:w-auto rounded-full bg-teal-700 px-8 py-3.5 font-semibold text-white shadow-md transition-all hover:bg-teal-800 hover:shadow-lg">Konsultasi via WhatsApp</a>
+          <a href="#layanan" class="w-full sm:w-auto rounded-full border border-slate-300 bg-white px-8 py-3.5 font-semibold text-slate-700 shadow-sm transition-all hover:border-teal-700 hover:text-teal-700">Lihat Layanan</a>
         </div>
       </div>
-      <p class='mt-8 text-center text-slate-600'>Informasi biaya disampaikan melalui WhatsApp.</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- AJAKAN BERTINDAK -->
-  <section id='kontak' class='mx-auto max-w-5xl px-4 py-16 text-center'>
-    <h2 class='text-2xl font-bold sm:text-3xl'>Siap berbicara dengan kami?</h2>
-    <p class='mx-auto mt-3 max-w-xl text-slate-600'>Tidak perlu menunggu sampai yakin. Ceritakan saja apa yang Anda lihat pada anak, kami bantu memahaminya.</p>
-    <a href='https://wa.me/6289631019945?text=Halo%20Nungtun%2C%20saya%20ingin%20berkonsultasi.' class='mt-6 inline-block rounded-full bg-teal-700 px-8 py-3 font-semibold text-white hover:bg-teal-800'>Chat WhatsApp Sekarang</a>
-  </section>
+    <!-- LAYANAN -->
+    <section id="layanan" class="mx-auto max-w-5xl px-4 py-20">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl text-slate-900">Layanan Nungtun</h2>
+        <p class="mt-2 text-slate-600">Pendekatan terstruktur untuk mengoptimalkan tumbuh kembang anak.</p>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:border-teal-600 hover:shadow-md">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-teal-700 font-bold mb-4">01</div>
+          <h3 class="text-xl font-bold text-slate-900">Asesmen</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed">Penilaian perkembangan anak untuk mengenali kekuatan dan kebutuhannya, sebagai dasar menentukan langkah berikutnya.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:border-teal-600 hover:shadow-md">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-teal-700 font-bold mb-4">02</div>
+          <h3 class="text-xl font-bold text-slate-900">Program di Rumah</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed">Program terapi dan pendidikan yang disusun sesuai kebutuhan anak, dan bisa dijalankan orang tua secara mandiri di rumah.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:border-teal-600 hover:shadow-md">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-teal-700 font-bold mb-4">03</div>
+          <h3 class="text-xl font-bold text-slate-900">Pendampingan Ahli</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed">Orang tua tidak berjalan sendiri. Ahli mendampingi, memantau perkembangan, dan menyesuaikan program bila diperlukan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARA MULAI -->
+    <section id="cara-mulai" class="bg-slate-50 border-y border-slate-200/80">
+      <div class="mx-auto max-w-5xl px-4 py-20">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl text-slate-900">Cara Memulai</h2>
+          <p class="mt-2 text-slate-600">Langkah mudah untuk mulai mendapatkan arah penanganan yang tepat.</p>
+        </div>
+        <div class="mt-12 grid gap-8 sm:grid-cols-3">
+          <div class="text-center p-4">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-700 text-xl font-bold text-white shadow-md">1</div>
+            <h3 class="mt-6 text-lg font-bold text-slate-900">Hubungi kami</h3>
+            <p class="mt-2 text-slate-600">Ceritakan kekhawatiran Anda lewat WhatsApp.</p>
+          </div>
+          <div class="text-center p-4">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-700 text-xl font-bold text-white shadow-md">2</div>
+            <h3 class="mt-6 text-lg font-bold text-slate-900">Asesmen dan konsultasi</h3>
+            <p class="mt-2 text-slate-600">Kami menilai kebutuhan anak dan menjelaskan hasilnya.</p>
+          </div>
+          <div class="text-center p-4">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-700 text-xl font-bold text-white shadow-md">3</div>
+            <h3 class="mt-6 text-lg font-bold text-slate-900">Mulai program</h3>
+            <p class="mt-2 text-slate-600">Jalankan program di rumah dengan pendampingan ahli.</p>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <span class="inline-block rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-medium text-slate-600 shadow-sm">
+            Informasi biaya disampaikan melalui WhatsApp.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- AJAKAN BERTINDAK -->
+    <section id="kontak" class="mx-auto max-w-5xl px-4 py-20 text-center">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-4xl text-slate-900">Siap berbicara dengan kami?</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-600 leading-relaxed">Tidak perlu menunggu sampai yakin. Ceritakan saja apa yang Anda lihat pada anak, kami bantu memahaminya.</p>
+      <div class="mt-8">
+        <a href="#" class="wa-link inline-block rounded-full bg-teal-700 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-teal-800 hover:shadow-xl">Chat WhatsApp Sekarang</a>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer class='border-t border-slate-200'>
-    <div class='mx-auto max-w-5xl px-4 py-8 text-center text-sm text-slate-500'>
+  <footer class="border-t border-slate-200 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-4 py-8 text-center text-sm text-slate-500 space-y-2">
       <p>Asesmen Nungtun bersifat asesmen perkembangan dan pendidikan, dan tidak menggantikan diagnosis medis oleh dokter atau psikolog.</p>
-      <p class='mt-2'>© 2026 Nungtun</p>
+      <p class="font-medium text-slate-600">&copy; 2026 Nungtun. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- CENTRALIZED WHATSAPP CONFIG SCRIPT (Mencegah DRY / Duplikasi Kode) -->
+  <script>
+    const WHATSAPP_NUMBER = "6289631019945"; // <-- Ganti nomor ini sekali saja dengan nomor WhatsApp Anda (format 62)
+    const DEFAULT_MESSAGE = "Halo Nungtun, saya ingin berkonsultasi mengenai program pendampingan anak.";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const targetUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
+      document.querySelectorAll(".wa-link").forEach(el => {
+        el.href = targetUrl;
+        el.target = "_blank";
+        el.rel = "noopener noreferrer";
+      });
+    });
+  </script>
 
 </body>
 </html>
